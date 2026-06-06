@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST</title>
+<style>
+body { margin: 0; font-family: Arial; }
+.test-box { background: #0a1628; color: white; padding: 50px; text-align: center; font-size: 24px; }
+.test-css { background: green; color: white; padding: 20px; text-align: center; font-size: 18px; }
+</style>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="test-box">
+  <h1>TEST: Bu yozuvni ko'ryapsizmi?</h1>
+  <p>Agar bu ko'k-qora fonda oq yozuvni ko'rsangiz — HTML ishlayapti</p>
+</div>
+<div class="test-css">CSS INLINE ishlayapti</div>
+
+<!-- Test if style.css loads -->
+<div class="hero" style="padding: 30px;">
+  <p style="color: yellow; font-size: 20px;">Hero class test — agar bu ko'rinsa va fon qora bo'lsa, style.css ishlayapti</p>
+</div>
+
+<div style="padding: 20px; background: #eee;">
+  <h2>Script test:</h2>
+  <div id="script-result" style="color: red; font-size: 18px;">JavaScript ISHLAMAYAPTI!</div>
+</div>
+
+<script>
+document.getElementById('script-result').textContent = 'JavaScript ISHLAYAPTI! ✅';
+document.getElementById('script-result').style.color = 'green';
+</script>
+
+<script>
+// Test if script-fixed.js would crash
+try {
+  var s = document.createElement('script');
+  s.src = './script-fixed.js';
+  s.onerror = function() {
+    var d = document.createElement('div');
+    d.style.cssText = 'padding:20px;background:red;color:white;font-size:18px;';
+    d.textContent = 'XATO: script-fixed.js YUKLANMADI!';
+    document.body.appendChild(d);
+  };
+  s.onload = function() {
+    var d = document.createElement('div');
+    d.style.cssText = 'padding:20px;background:green;color:white;font-size:18px;';
+    d.textContent = 'script-fixed.js YUKLANDI ✅';
+    document.body.appendChild(d);
+  };
+  document.body.appendChild(s);
+} catch(e) {
+  var d = document.createElement('div');
+  d.style.cssText = 'padding:20px;background:red;color:white;font-size:18px;';
+  d.textContent = 'XATO: ' + e.message;
+  document.body.appendChild(d);
+}
+</script>
+</body>
+</html>

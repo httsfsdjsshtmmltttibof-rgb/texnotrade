@@ -1,0 +1,12 @@
+    prodBadgeHit: "Xit",
+
+    servicesLabel: "Xizmatlar",
+    servicesTitle: "Jihozlashga kompleks yondashuv",
+    servicesSubtitle: "Biz mijozni har bir bosqichda kuzatib boramiz — uskunani tanlashdan ishga tushirishgacha",
+    serv1Title: "Maslahat va tanlash",
+    serv1Desc: "Mutaxassislarimiz klinikangiz vazifalari va byudjetiga mos optimal uskunani tanlashga yordam beradi.",
+    serv2Title: "Yetkazib berish va o'rnatish",
+    serv2Desc: "Professional yetkazib berish, ochish, o'rnatish va uskunalarni joyida kalibrlash.",
+    serv3Title: "Xodimlarni o'qitish",
+    serv3Desc: "Shifokorlar va tibbiy xodimlarni yangi uskunalar bilan ishlashga to'liq o'qitish.",
+    serv4Title: "Kafolatli servis",

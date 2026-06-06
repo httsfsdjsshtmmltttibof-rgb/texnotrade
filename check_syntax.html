@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Syntax Check</title>
+</head>
+<body style="font-family: sans-serif; padding: 40px; background: #222; color: #fff;">
+  <h2>JavaScript xatoliklarni tekshirish (Syntax Check)</h2>
+  <div id="error-log" style="background: #a00; padding: 20px; border-radius: 8px; margin-top: 20px; font-family: monospace; font-size: 16px;">
+    Kutilyapti... Agar bu yerda qizil yozuv o'zgarmasa yoki hech nima yozilmasa, fayl xatosiz bo'lishi mumkin.
+  </div>
+
+  <script>
+    window.onerror = function(message, source, lineno, colno, error) {
+      document.getElementById('error-log').innerHTML = 
+        "<b>XATO TOPILDI!</b><br><br>" +
+        "<b>Fayl:</b> " + source + "<br>" +
+        "<b>Qator:</b> " + lineno + "<br>" +
+        "<b>Ustun:</b> " + colno + "<br>" +
+        "<b>Xato:</b> " + message;
+      return true; // prevent default error handling
+    };
+  </script>
+  
+  <!-- script-fixed.js ni chaqiramiz -->
+  <script src="./script-fixed.js"></script>
+
+  <script>
+    // Agar yuqoridagi script to'g'ri yuklansa va xato bermasa:
+    setTimeout(function() {
+      if (document.getElementById('error-log').innerHTML.indexOf("XATO TOPILDI") === -1) {
+        document.getElementById('error-log').style.background = "#0a0";
+        document.getElementById('error-log').innerHTML = "<b>HAMMASI ZO'R! JavaScript faylida SINTAKTIK XATO YO'Q.</b>";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

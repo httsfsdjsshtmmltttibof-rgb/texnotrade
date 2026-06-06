@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfTexnoTrade — Офтальмологическое оборудование</title>
+  <meta name="description" content="ProfTexnoTrade — поставка профессионального офтальмологического оборудования. Диагностика, хирургия, оптика для клиник.">
+  
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:;">
+
+  <link rel="stylesheet" href="./style.css?v=1.1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+  <!-- Language Selection Overlay -->
+  <div id="langOverlay" class="lang-overlay hidden">
+    <div class="lang-overlay-content">
+      <div class="lang-overlay-logo"><img src="./logo.png" alt="ProfTexnoTrade" style="height: 40px; margin-bottom: 20px;"></div>
+      <h2>Tilni tanlang | Выберите язык | Choose Language</h2>
+      <div class="lang-overlay-buttons">
+        <button onclick="selectOverlayLang('uz')">O'zbek</button>
+        <button onclick="selectOverlayLang('ru')">Русский</button>
+        <button onclick="selectOverlayLang('en')">English</button>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./logo.png" alt="ProfTexnoTrade" class="logo-img">
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="index.html#home" data-i18n="navHome">Главная</a>
+        <a href="index.html#about" data-i18n="navAbout">О нас</a>
+        <a href="index.html#products" data-i18n="navProducts">Каталог</a>
+        <a href="index.html#services" data-i18n="navServices">Услуги</a>
+        <a href="index.html#contact" data-i18n="navContact">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="index.html#contact" class="btn btn-primary nav-contact-btn" data-i18n="navContactBtn">Связаться</a>
+        
+        <button class="menu-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile">
+    <a href="index.html#home" data-i18n="navHome">Главная</a>
+    <a href="index.html#about" data-i18n="navAbout">О нас</a>
+    <a href="index.html#products" data-i18n="navProducts">Каталог</a>
+    <a href="index.html#services" data-i18n="navServices">Услуги</a>
+    <a href="index.html#contact" data-i18n="navContact">Контакты</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- ==================== PRODUCT DETAILS PAGE ==================== -->
+  <main class="product-page-main">
+    <div class="container">
+      <div class="product-page-header" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+        <a href="javascript:history.back()" class="back-arrow-btn" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--card-bg); box-shadow: var(--shadow-sm); color: var(--text-color); font-size: 1.2rem; transition: all 0.3s ease; text-decoration: none;" onmouseover="this.style.background='var(--primary-color)'; this.style.color='#fff';" onmouseout="this.style.background='var(--card-bg)'; this.style.color='var(--text-color)';">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="breadcrumb" style="margin-bottom: 0;">
+          <a href="index.html" data-i18n="navHome">Главная</a> <i class="fas fa-chevron-right"></i> <a href="index.html#products" data-i18n="navProducts">Каталог</a> <i class="fas fa-chevron-right"></i> <span id="pageCat">...</span>
+        </div>
+      </div>
+
+      <div class="product-page-layout">
+        
+        <!-- Left: Main Content (Gallery + Descriptions) -->
+        <div class="product-page-content">
+          <div class="product-page-gallery">
+            <div class="main-image-wrap">
+              <img id="pageMainImg" src="" alt="Product">
+              <video id="pageMainVideo" src="" controls style="display:none; width:100%; max-height:400px; object-fit:contain; border-radius:12px;"></video>
+            </div>
+            <div class="page-thumbnails" id="pageThumbnails">
+              <!-- Thumbnails inserted via JS -->
+            </div>
+          </div>
+
+          <div class="product-page-text">
+            <h1 class="page-title" id="pageTitle">...</h1>
+            <div class="page-subtitle" id="pageSubtitle">...</div>
+            <div class="page-desc" id="pageDesc">...</div>
+            
+            <div class="page-advantages">
+              <h3><i class="fas fa-check-circle"></i> <span data-i18n="modalAdvantagesLabel">Преимущества</span></h3>
+              <ul id="pageAdvantagesList" class="feature-list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Sidebar (Specs + Features + Action) -->
+        <div class="product-page-sidebar">
+          <div class="sidebar-card action-card">
+            <h2 data-i18n="btnRequest">Запросить цену</h2>
+            <p data-i18n="contactSubtitle">Мы готовы ответить на все ваши вопросы и помочь с выбором</p>
+            <a href="index.html#contact" class="btn btn-primary w-full" data-i18n="modalOrderBtn">Заказать</a>
+          </div>
+
+          <div class="sidebar-card features-card">
+            <h3><i class="fas fa-star"></i> <span data-i18n="modalFeaturesLabel">Основные возможности</span></h3>
+            <ul id="pageFeaturesList" class="feature-list"></ul>
+          </div>
+
+          <div class="sidebar-card specs-card">
+            <h3 data-i18n="modalSpecsLabel">Технические характеристики</h3>
+            <table class="specs-table" id="pageSpecsTable">
+              <!-- Specs rows inserted via JS -->
+            </table>
+          </div>
+          
+          <div id="sidebarVideoContainer" class="sidebar-card video-card" style="display: none;">
+            <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--text-color);"><i class="fas fa-video"></i> Video</h3>
+            <video id="sidebarVideo" src="" controls style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-sm);"></video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="#" class="logo footer-logo">
+            <i class="fas fa-eye logo-icon"></i>
+            <span>ProfTexnoTrade</span>
+          </a>
+          <p class="footer-desc" data-i18n="heroDesc">
+            Поставка современного офтальмологического оборудования ведущих мировых производителей.
+          </p>
+          <div class="social-links">
+            <a href="https://t.me/protexnotrade" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/protexnotrade?igsh=OGY3cmxldXlpZmE3&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1B555GFn28/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@ProftexnoTrade" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="navProducts">Каталог</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="filterDiag">Диагностика</a></li>
+            <li><a href="#" data-i18n="filterSurg">Хирургия</a></li>
+            <li><a href="#" data-i18n="filterOptical">Оптика</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="navContact">Контакты</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contactAddressVal">г. Ташкент, Мирабадский р-н, СГМ Биродарлик, ул. Эльтузар, 58А</span></li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+998931712202" style="color: inherit;" data-i18n="contactPhoneVal">+998 93 171 22 02</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:proftexnotrade0@gmail.com" style="color: inherit;" data-i18n="contactEmailVal">proftexnotrade0@gmail.com</a></li>
+            <li><i class="fab fa-telegram-plane"></i> <a href="https://t.me/Dilshod2202" style="color: inherit;" target="_blank">Telegram: @Dilshod2202</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ProfTexnoTrade. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content-wrapper">
+      <img id="lightboxImg" class="lightbox-content" src="" alt="Zoomed Image">
+      <video id="lightboxVideo" class="lightbox-content" src="" controls style="display:none;"></video>
+    </div>
+    <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Firebase Compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+  <script src="./firebase-client.js"></script>
+  <script src="./script-fixed.js?v=1.1"></script>
+</body>
+</html>

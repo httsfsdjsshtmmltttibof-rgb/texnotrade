@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Bazada Ma'lumotlarni Sinxronlash</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f2f5; }
+    .box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; }
+    button { background: #2563eb; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+    #log { margin-top: 20px; color: #16a34a; font-weight: bold; }
+    #errorLog { margin-top: 20px; color: #dc2626; font-weight: bold; }
+  </style>
+  
+  <!-- Firebase Compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+
+  <div class="box">
+    <h2>Eski mahsulotlarni yangi bazaga o'tkazish</h2>
+    <p>Siz yangi Firebase baza yaratganingiz uchun u hozircha bo'm-bo'sh. Barcha mahsulotlarni unga yuklash uchun quyidagi tugmani bosing.</p>
+    <button id="uploadBtn">Mahsulotlarni Bazasga Yuklash</button>
+    <div id="log"></div>
+    <div id="errorLog"></div>
+  </div>
+
+  <!-- Mahsulotlar ro'yxati (productData) bu faylning ichida -->
+  <script src="./script-fixed.js"></script>
+
+  <script>
+    // Yangi Firebase konfiguratsiyasi
+    const firebaseConfig = {
+      apiKey: "AIzaSyCwrnN3ulOW8aNLBQdXVT5u99vewAPk0JA",
+      authDomain: "protexnotrade-analitika.firebaseapp.com",
+      projectId: "protexnotrade-analitika",
+      storageBucket: "protexnotrade-analitika.firebasestorage.app",
+      messagingSenderId: "30112835334",
+      appId: "1:30112835334:web:5aa151d50b174214da2087",
+      measurementId: "G-4RNRP8PFLP"
+    };
+
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+    const db = firebase.firestore();
+
+    document.getElementById('uploadBtn').addEventListener('click', async () => {
+      const btn = document.getElementById('uploadBtn');
+      const log = document.getElementById('log');
+      const errLog = document.getElementById('errorLog');
+
+      btn.disabled = true;
+      btn.innerText = "Yuklanmoqda... Kuting";
+      log.innerText = "";
+      errLog.innerText = "";
+
+      if (!window.productData || Object.keys(window.productData).length === 0) {
+        errLog.innerText = "Mahsulotlar ro'yxati topilmadi (productData bo'sh)!";
+        btn.disabled = false;
+        btn.innerText = "Mahsulotlarni Bazasga Yuklash";
+        return;
+      }
+
+      let count = 0;
+      let errors = 0;
+      const total = Object.keys(window.productData).length;
+
+      for (const id in window.productData) {
+        try {
+          await db.collection('products').doc(id).set(window.productData[id]);
+          count++;
+          log.innerText = `Yuklandi: ${count} / ${total}`;
+        } catch (err) {
+          console.error("Xato:", id, err);
+          errors++;
+        }
+      }
+
+      if (errors > 0) {
+        errLog.innerText = `${errors} ta mahsulot yuklanmadi. Konsolni tekshiring.`;
+      } else {
+        log.innerText = `Muvaffaqiyatli! Jami ${count} ta mahsulot bazaga joylandi. Endi Admin panelga o'tishingiz mumkin!`;
+      }
+      
+      btn.innerText = "Tugadi";
+    });
+  </script>
+
+</body>
+</html>

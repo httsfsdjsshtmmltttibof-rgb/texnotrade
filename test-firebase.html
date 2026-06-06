@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src='https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js'></script>
+<script src='https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js'></script>
+<script>
+  const firebaseConfig = {
+      apiKey: 'AIzaSyB0a2u22tEU_3fJgKFwD5YV37mfUEoiFDE',
+      authDomain: 'protexnatrade.firebaseapp.com',
+      projectId: 'protexnatrade',
+      storageBucket: 'protexnatrade.firebasestorage.app',
+      messagingSenderId: '582486424998',
+      appId: '1:582486424998:web:4caa608f3d45f66ff6e367'
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  db.collection('daily_visits').get().then(snap => {
+    let output = '';
+    snap.forEach(doc => { output += doc.id + ': ' + JSON.stringify(doc.data()) + '\n'; });
+    console.log('VISITS:\n' + output);
+  });
+</script>
+</body>
+</html>

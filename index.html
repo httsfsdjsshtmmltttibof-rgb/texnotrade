@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfTexnoTrade — Офтальмологическое оборудование</title>
+  <meta name="description"
+    content="ProfTexnoTrade — поставка профессионального офтальмологического оборудования. Диагностика, хирургия, оптика для клиник.">
+  <meta name="keywords" content="офтальмология, оборудование, медтехника, диагностика, хирургия, оптика, клиника">
+  <meta name="author" content="ProfTexnoTrade">
+  <meta property="og:title" content="ProfTexnoTrade — Офтальмологическое оборудование">
+  <meta property="og:description"
+    content="Поставка современного офтальмологического оборудования ведущих мировых производителей.">
+  <meta property="og:type" content="website">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:;">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css?v=1.1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231a56db' rx='20' width='100' height='100'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='white'%3E👁%3C/text%3E%3C/svg%3E">
+</head>
+
+<body class="">
+  <!-- Language Selection Overlay -->
+  <div id="langOverlay" class="lang-overlay hidden">
+    <div class="lang-overlay-content">
+      <div class="lang-overlay-logo"><img src="./logo.png" alt="ProfTexnoTrade" style="height: 40px; margin-bottom: 20px;"></div>
+      <h2>Tilni tanlang | Выберите язык | Choose Language</h2>
+      <div class="lang-overlay-buttons">
+        <button onclick="selectOverlayLang('uz')">O'zbek</button>
+        <button onclick="selectOverlayLang('ru')">Русский</button>
+        <button onclick="selectOverlayLang('en')">English</button>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./logo.png" alt="ProfTexnoTrade" class="logo-img">
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#home" data-i18n="navHome">Главная</a>
+        <a href="#about" data-i18n="navAbout">О нас</a>
+        <a href="#products" data-i18n="navProducts">Каталог</a>
+        <a href="#services" data-i18n="navServices">Услуги</a>
+        <a href="#contact" data-i18n="navContact">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="nav-contact-btn">
+          <i class="fas fa-phone"></i>
+          <span data-i18n="navContactBtn">Связаться</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="nav-mobile">
+    <a href="#home" data-i18n="navHome">Главная</a>
+    <a href="#about" data-i18n="navAbout">О нас</a>
+    <a href="#products" data-i18n="navProducts">Каталог</a>
+    <a href="#services" data-i18n="navServices">Услуги</a>
+    <a href="#contact" data-i18n="navContact">Контакты</a>
+    <div class="lang-switcher-mobile">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home" style="background: linear-gradient(160deg, #0a1628 0%, #0f2035 40%, #132f5e 100%); min-height: 100vh;">
+    <div class="hero-grid"></div>
+    <!-- Interactive Particles Canvas -->
+    <canvas id="hero-particles" width="1200" height="600"></canvas>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-microscope"></i>
+          <span data-i18n="heroBadge">Офтальмологическое оборудование</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="heroTitle1">Профессиональное</span><br>
+          <span class="highlight" data-i18n="heroTitle2">медицинское</span><br>
+          <span data-i18n="heroTitle3">оборудование</span>
+        </h1>
+        <p class="hero-description" data-i18n="heroDesc">
+          Поставка современного офтальмологического оборудования ведущих мировых производителей. Диагностика, лечение,
+          хирургия — полное оснащение клиник.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">
+            <i class="fas fa-th-large"></i>
+            <span data-i18n="heroBtnCatalog">Каталог продукции</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-headset"></i>
+            <span data-i18n="heroBtnContact">Получить консультацию</span>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-wrapper">
+          <img src="./hero-img.jpg" alt="Офтальмологическое оборудование" class="hero-logo-img">
+          <div class="hero-float-card card-1">
+            <div class="icon"><i class="fas fa-certificate"></i></div>
+            <div class="info">
+              <div class="title" data-i18n="heroFloat1Title">Сертифицировано</div>
+              <div class="value" data-i18n="heroFloat1Value">ISO 13485 | CE Mark</div>
+            </div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="info">
+              <div class="title" data-i18n="heroFloat2Title">Гарантия</div>
+              <div class="value" data-i18n="heroFloat2Value">до 5 лет</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BRANDS MARQUEE ==================== -->
+  <div class="brands-marquee">
+    <div class="container">
+      <div class="marquee-wrapper">
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <a href="https://topconhealthcare.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Impact', sans-serif" font-weight="normal" font-size="24" fill="#0a1628"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">TOPCON</text></svg></a>
+          <a href="https://www.nidek-intl.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#000" dominant-baseline="middle"
+                text-anchor="middle" letter-spacing="2">NIDEK</text></svg></a>
+          <a href="https://www.zeiss.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30">
+              <rect width="100" height="30" rx="4" fill="#003b8e" /><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#fff" dominant-baseline="middle"
+                text-anchor="middle">ZEISS</text>
+            </svg></a>
+          <a href="https://huvitz.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Trebuchet MS', sans-serif" font-weight="bold" font-size="22" fill="#0055a5"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">HUVITZ</text></svg></a>
+          <a href="https://www.tomey.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="24" fill="#000"
+                dominant-baseline="middle" text-anchor="middle">TOMEY</text></svg></a>
+          <a href="https://www.reichert.com" target="_blank" class="brand-item"><svg viewBox="0 0 120 30" width="120" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#d90000"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">REICHERT</text></svg></a>
+          <a href="https://www.haag-streit.com" target="_blank" class="brand-item"><svg viewBox="0 0 160 30" width="160" height="30">
+              <rect x="0" y="2" width="160" height="26" fill="none" stroke="#333" stroke-width="2" /><text x="50%"
+                y="55%" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#333"
+                dominant-baseline="middle" text-anchor="middle">HAAG-STREIT</text>
+            </svg></a>
+          <a href="https://lumenis.com" target="_blank" class="brand-item"><svg viewBox="0 0 120 30" width="120" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#00a0e3"
+                dominant-baseline="middle" text-anchor="middle">LUMENIS</text></svg></a>
+
+          <!-- Set 2 (for infinite scroll) -->
+          <a href="https://topconhealthcare.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Impact', sans-serif" font-weight="normal" font-size="24" fill="#0a1628"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">TOPCON</text></svg></a>
+          <a href="https://www.nidek-intl.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#000" dominant-baseline="middle"
+                text-anchor="middle" letter-spacing="2">NIDEK</text></svg></a>
+          <a href="https://www.zeiss.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30">
+              <rect width="100" height="30" rx="4" fill="#003b8e" /><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#fff" dominant-baseline="middle"
+                text-anchor="middle">ZEISS</text>
+            </svg></a>
+          <a href="https://huvitz.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Trebuchet MS', sans-serif" font-weight="bold" font-size="22" fill="#0055a5"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">HUVITZ</text></svg></a>
+          <a href="https://www.tomey.com" target="_blank" class="brand-item"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="55%"
+                font-family="'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="24" fill="#000"
+                dominant-baseline="middle" text-anchor="middle">TOMEY</text></svg></a>
+          <a href="https://www.reichert.com" target="_blank" class="brand-item"><svg viewBox="0 0 120 30" width="120" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#d90000"
+                dominant-baseline="middle" text-anchor="middle" letter-spacing="1">REICHERT</text></svg></a>
+          <a href="https://www.haag-streit.com" target="_blank" class="brand-item"><svg viewBox="0 0 160 30" width="160" height="30">
+              <rect x="0" y="2" width="160" height="26" fill="none" stroke="#333" stroke-width="2" /><text x="50%"
+                y="55%" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#333"
+                dominant-baseline="middle" text-anchor="middle">HAAG-STREIT</text>
+            </svg></a>
+          <a href="https://lumenis.com" target="_blank" class="brand-item"><svg viewBox="0 0 120 30" width="120" height="30"><text x="50%" y="55%"
+                font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#00a0e3"
+                dominant-baseline="middle" text-anchor="middle">LUMENIS</text></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal" data-i18n="aboutLabel">Почему мы</div>
+        <h2 class="section-title reveal" data-i18n="aboutTitle">Надёжный партнёр для вашей клиники</h2>
+        <p class="section-subtitle mx-auto reveal" data-i18n="aboutSubtitle">Мы предоставляем полный спектр услуг — от
+          консультации до сервисного обслуживания</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal reveal-delay-1">
+          <div class="icon-box"><i class="fas fa-award"></i></div>
+          <h3 data-i18n="about1Title">Оригинальное оборудование</h3>
+          <p data-i18n="about1Desc">Прямые поставки от производителей. Вся продукция сертифицирована и имеет гарантию
+            качества.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="icon-box"><i class="fas fa-cogs"></i></div>
+          <h3 data-i18n="about2Title">Техническая поддержка</h3>
+          <p data-i18n="about2Desc">Команда инженеров обеспечивает установку, настройку и обучение персонала вашей
+            клиники.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-3">
+          <div class="icon-box"><i class="fas fa-shipping-fast"></i></div>
+          <h3 data-i18n="about3Title">Быстрая доставка</h3>
+          <p data-i18n="about3Desc">Оперативная логистика по всей стране. Складской запас популярных моделей
+            оборудования.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-4">
+          <div class="icon-box"><i class="fas fa-tools"></i></div>
+          <h3 data-i18n="about4Title">Сервисное обслуживание</h3>
+          <p data-i18n="about4Desc">Гарантийное и послегарантийное обслуживание с оригинальными запчастями.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCTS ==================== -->
+  <section class="products section-padding" id="products">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal" data-i18n="productsLabel">Каталог</div>
+        <h2 class="section-title reveal" data-i18n="productsTitle">Офтальмологическое оборудование</h2>
+        <p class="section-subtitle mx-auto reveal" data-i18n="productsSubtitle">Широкий ассортимент профессионального
+          оборудования для диагностики и лечения</p>
+      </div>
+
+      <!-- Search -->
+      <div class="product-search-wrapper reveal" style="text-align: center; margin-bottom: 2rem;">
+        <input type="text" id="productSearch" data-i18n-placeholder="searchPlaceholder" placeholder="🔍 Поиск..." style="padding: 12px 20px; width: 100%; max-width: 500px; border-radius: 30px; border: 1px solid var(--border-color, #ccc); font-size: 16px; background: var(--card-bg, #fff); color: var(--text-color, #333); outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--border-color, #ccc)'">
+      </div>
+
+      <!-- Filters -->
+      <div class="product-filter reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Hammasi</button>
+        <button class="filter-btn" data-filter="refraction" data-i18n="filterRefraction">Refraksiya</button>
+        <button class="filter-btn" data-filter="diagnostic" data-i18n="filterDiagnostic">Diagnostika</button>
+        <button class="filter-btn" data-filter="surgery" data-i18n="filterSurgeryIOL">Xirurgiya va IOL</button>
+        <button class="filter-btn" data-filter="lasers" data-i18n="filterLasers">Oftalmologik lazerlar</button>
+        <button class="filter-btn" data-filter="lens-edger" data-i18n="filterLensEdger">Linza kesish uskunalari</button>
+        <button class="filter-btn" data-filter="industrial-edger" data-i18n="filterIndustrialEdger">Sanoat linza uskunalari</button>
+        <button class="filter-btn" data-filter="peripheral" data-i18n="filterPeripheral">Periferik uskunalar</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid">
+        <div class="category-divider reveal" data-i18n="categoryRefraction">Рефракция</div>
+
+        <!-- Product 1 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=phantom'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img
+              src="https://img.medicalexpo.com/images_me/photo-g/70665-21242747.webp"
+              alt="PHANTOM Open-field Refraction System">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod1Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod1Name">Офтальмологический прибор рефрактометр PHANTOM™</h3>
+            <p class="product-desc" data-i18n="prod1Desc">Бинокулярная система рефракции открытого поля без физических линз. Виртуальная симуляция и плавающие таблицы.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 6 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=al-scan'">
+          <div class="product-image">
+            <img src="https://img.medicalexpo.com/images_me/photo-mg/70665-8683631.jpg"
+              alt="AL-Scan Optical Biometer">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod6Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod6Name">Оптический биометр (AL-Scan)</h3>
+            <p class="product-desc" data-i18n="prod6Desc">Измерение 6 клинических параметров для хирургии катаракты за 10 секунд.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=opd-scan'">
+          <div class="product-image">
+            <span class="product-badge hot" data-i18n="prodBadgeHit">Хит</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-11707006.webp"
+              alt="OPD-Scan III VS">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod7Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod7Name">OPD-Scan III VS</h3>
+            <p class="product-desc" data-i18n="prod7Desc">Устройство для комплексного анализа зрения с топографом и рефрактометром.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=ark-f'">
+          <div class="product-image">
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-14885765.webp"
+              alt="ARK-F / AR-F">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod8Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod8Name">ARK-F / AR-F</h3>
+            <p class="product-desc" data-i18n="prod8Desc">Полностью автоматизированный рефрактометр и кератометр с голосовыми подсказками.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=nt-1'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-18567695.webp"
+              alt="NT-1 / NT-1p">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod5Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod5Name">NT-1 / NT-1p (Автоматический тонометр)</h3>
+            <p class="product-desc" data-i18n="prod5Desc">Полностью автоматический бесконтактный тонометр с функцией пахиметрии и голосовыми подсказками.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=rt-6100'">
+          <div class="product-image">
+            <span class="product-badge hot" data-i18n="prodBadgeHit">Хит</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-14889373.webp"
+              alt="RT-6100 Smart Refractor">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod9Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod9Name">Умный рефрактор RT-6100</h3>
+            <p class="product-desc" data-i18n="prod9Desc">Высокоточная интеллектуальная система рефракции с удобным сенсорным экраном.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=handyref'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-8679654.webp"
+              alt="Автоматический кератометр HandyRef-K">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod10Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod10Name">Автоматический кератометр HandyRef-K</h3>
+            <p class="product-desc" data-i18n="prod10Desc">Портативные измерения в любое время и в любом месте. Улучшенное удобство использования благодаря инновационным функциям.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=ssc-370'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-8679717.webp"
+              alt="SSC-370 Space Saving Chart">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod11Cat">Оптика</div>
+            <h3 class="product-name" data-i18n="prod11Name">Проектор знаков SSC-370</h3>
+            <p class="product-desc" data-i18n="prod11Desc">Компактный экран для проверки зрения в небольших помещениях.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=lm-1800'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15911336.webp"
+              alt="LM-1800PD / LM-1800P Auto Lensmeter">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod12Cat">Оптика</div>
+            <h3 class="product-name" data-i18n="prod12Name">Автоматический диоптриметр LM-1800</h3>
+            <p class="product-desc" data-i18n="prod12Desc">Сверхточное измерение параметров линз с помощью датчика Хартманна на 108 точек.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card reveal" data-category="refraction"
+          onclick="window.location.href='product.html?id=pm-700'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-8683324.webp"
+              alt="PM-700 Pupilometer">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod13Cat">Оптика</div>
+            <h3 class="product-name" data-i18n="prod13Name">Пупиллометр PM-700</h3>
+            <p class="product-desc" data-i18n="prod13Desc">Сверхточный и эргономичный измеритель межзрачкового расстояния (PD).</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-divider reveal" data-i18n="categoryDiagnostic">Диагностика</div>
+
+        <!-- Product 11 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=mirante'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-14891491.webp"
+              alt="Mirante Multimodal Imaging Platform">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod14Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod14Name">Мультимодальная платформа Mirante</h3>
+            <p class="product-desc" data-i18n="prod14Desc">Сверхширокопольная и Ultra HD визуализация глазного дна с помощью SLO/OCT.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 12 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=retina-scan-duo'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-17328770.webp"
+              alt="Retina Scan Duo OCT">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod15Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod15Name">Оптический когерентный томограф Retina Scan Duo</h3>
+            <p class="product-desc" data-i18n="prod15Desc">Широкопольное сканирование макулы и диска зрительного нерва в одном снимке.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 13 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=mp-3'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-8683602.webp"
+              alt="MP-3 Microperimeter">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod16Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod16Name">Микропериметр MP-3</h3>
+            <p class="product-desc" data-i18n="prod16Desc">Микропериметрия с широким диапазоном и встроенной ретинальной камерой.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 14 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=afc-330'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-17328830.webp"
+              alt="AFC-330 Auto Fundus Camera">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod17Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod17Name">Автоматическая фундус-камера AFC-330</h3>
+            <p class="product-desc" data-i18n="prod17Desc">Система "Все в одном" со встроенной камерой и компьютером.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 15 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=sl-2000'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15911561.webp"
+              alt="SL-2000 Slit Lamp">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod21Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod21Name">Щелевая лампа SL-2000</h3>
+            <p class="product-desc" data-i18n="prod21Desc">Четкое и ясное изображение в практически естественных цветах с LED освещением.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 16 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=keeler-z-slit-lamp'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/80326-19404846.webp"
+              alt="Keeler Z-style Slit Lamp">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod22Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod22Name">Настольная щелевая лампа KSL-Z5-DR</h3>
+            <p class="product-desc" data-i18n="prod22Desc">Оптика мирового класса и превосходное LED освещение.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 17 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=ksl-z5'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/80326-19404835.webp"
+              alt="Table slit lamp KSL-Z5">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod23Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod23Name">Настольная щелевая лампа KSL-Z5</h3>
+            <p class="product-desc" data-i18n="prod23Desc">Оптика мирового класса и превосходное LED освещение.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 18 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=sl-m6'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/108807-17742215.webp"
+              alt="Table slit lamp SL-M6">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod24Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod24Name">Настольная щелевая лампа SL-M6</h3>
+            <p class="product-desc" data-i18n="prod24Desc">Микроскоп Галилея с выдающейся оптикой и элегантным дизайном.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 19 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=sl-100'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/131438-21265214.webp"
+              alt="Digital slit lamp SL-100">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod25Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod25Name">Цифровая щелевая лампа SL-100</h3>
+            <p class="product-desc" data-i18n="prod25Desc">Высокая производительность, надежность и инновационное LED освещение.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 20 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=kj5x'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70583-18921264.webp"
+              alt="Table slit lamp KJ5X">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod26Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod26Name">Настольная щелевая лампа KJ5X</h3>
+            <p class="product-desc" data-i18n="prod26Desc">Удобный параллельный стереомикроскоп с отличной оптикой.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 21 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=yslxd-2er'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/4588903-20573388.webp"
+              alt="Table slit lamp YSLXD-2ER">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod27Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod27Name">Настольная щелевая лампа YSLXD-2ER</h3>
+            <p class="product-desc" data-i18n="prod27Desc">Высококачественная медицинская щелевая лампа (параллельный тип Галилея).</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 22 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=yslxd-3er'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/4588903-20573397.webp"
+              alt="Digital slit lamp YSLXD-3ER">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod28Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod28Name">Цифровая щелевая лампа YSLXD-3ER</h3>
+            <p class="product-desc" data-i18n="prod28Desc">Цифровая щелевая лампа с профессиональной оптикой Nikon D5200.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 24 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=opd-scan-3'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15911601.webp"
+              alt="Corneal topographer OPD-Scan® III">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod30Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod30Name">Роговичный топограф OPD-Scan® III</h3>
+            <p class="product-desc" data-i18n="prod30Desc">Истинная рефракционная рабочая станция 5-в-1 для всех врачей.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 25 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=cem-530'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-9603581.webp"
+              alt="Specular microscope CEM-530">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod31Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod31Name">Зеркальный микроскоп CEM-530</h3>
+            <p class="product-desc" data-i18n="prod31Desc">Многозональная зеркальная микроскопия с быстрым анализом за 2 секунды.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 26 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=al-scan'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-8683631.webp"
+              alt="Optical ophthalmic biometer AL-Scan">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod32Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod32Name">Оптический биометр AL-Scan</h3>
+            <p class="product-desc" data-i18n="prod32Desc">Оптический биометр, измеряющий 6 клинических параметров за 10 секунд.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 27 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=us-4000'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15911740.webp"
+              alt="On-platform, tabletop ultrasound system US-4000">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod33Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod33Name">Ультразвуковая система US-4000</h3>
+            <p class="product-desc" data-i18n="prod33Desc">Компактная ультразвуковая система с B-сканированием, биометрией и пахиметрией.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 28 -->
+        <div class="product-card reveal" data-category="diagnostic"
+          onclick="window.location.href='product.html?id=us-500'">
+          <div class="product-image">
+            <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+            <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15911804.webp"
+              alt="On-platform, tabletop ultrasound system US-500">
+          </div>
+          <div class="product-info">
+            <div class="product-category" data-i18n="prod34Cat">Диагностика</div>
+            <h3 class="product-name" data-i18n="prod34Name">Ультразвуковая система US-500</h3>
+            <p class="product-desc" data-i18n="prod34Desc">Компактная ультразвуковая система с биометрией, пахиметрией и сенсорным экраном.</p>
+            <div class="product-footer">
+              <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+              <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      <div class="category-divider" id="surgical-iol">
+        <span data-i18n="categorySurgicalIol">Surgical & IOL</span>
+      </div>
+      <!-- Product 29 -->
+      <div class="product-card reveal" data-category="surgical"
+        onclick="window.location.href='product.html?id=cube-alpha'">
+        <div class="product-image">
+          <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-18568332.webp"
+            alt="Phacoemulsifier Cube α">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="prod35Cat">Хирургия</div>
+          <h3 class="product-name" data-i18n="prod35Name">Факоэмульсификатор Cube α</h3>
+          <p class="product-desc" data-i18n="prod35Desc">Компактная и мощная платформа для хирургии катаракты.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="category-divider" id="ophthalmic-lasers">
+        <span data-i18n="categoryOphthalmicLasers">Ophthalmic Lasers</span>
+      </div>
+      <!-- Product 30 -->
+      <div class="product-card reveal" data-category="lasers"
+        onclick="window.location.href='product.html?id=gyc-500'">
+        <div class="product-image">
+          <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-20511105.webp"
+            alt="Retinal photocoagulation laser GYC-500">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="prod36Cat">Лазеры</div>
+          <h3 class="product-name" data-i18n="prod36Name">Лазерный фотокоагулятор GYC-500</h3>
+          <p class="product-desc" data-i18n="prod36Desc">Компактный и мощный зеленый лазерный фотокоагулятор.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 31 -->
+      <div class="product-card reveal" data-category="lasers"
+        onclick="window.location.href='product.html?id=yc-200-s-plus'">
+        <div class="product-image">
+          <span class="product-badge new" data-i18n="prodBadgeNew">Новинка</span>
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-19550464.webp"
+            alt="Trabeculoplasty laser YC-200 S PLUS">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="prod37Cat">Лазеры</div>
+          <h3 class="product-name" data-i18n="prod37Name">Трабекулопластический лазер YC-200 S PLUS</h3>
+          <p class="product-desc" data-i18n="prod37Desc">Современный лазер для лечения глаукомы и катаракты.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="category-divider" id="lens-edger">
+        <span data-i18n="categoryLensEdger">LENS EDGER</span>
+      </div>
+      <!-- Product 32 -->
+      <div class="product-card reveal" data-category="lens-edger"
+        onclick="window.location.href='product.html?id=me-1'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-21242780.webp"
+            alt="Optical lens edger ME-1">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod38Name">OPTICAL LENS EDGER ME-1</h3>
+          <p class="product-desc" data-i18n="placeholderDesc">Информация будет добавлена позже.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 33 -->
+      <div class="product-card reveal" data-category="lens-edger"
+        onclick="window.location.href='product.html?id=lexce-plus-trend8'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-21242990.webp"
+            alt="Optical lens shape tracer LEXCE plus Trend8">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod39Name">OPTICAL LENS SHAPE TRACER LEXCE PLUS TREND8</h3>
+          <p class="product-desc" data-i18n="placeholderDesc">Информация будет добавлена позже.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="category-divider" id="industrial-edger">
+        <span data-i18n="categoryIndustrialEdger">INDUSTRIAL EDGER</span>
+      </div>
+      <!-- Product 34 -->
+      <div class="product-card reveal" data-category="industrial-edger"
+        onclick="window.location.href='product.html?id=mse-1'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-21242738.webp"
+            alt="Optical lens edger MSE-1">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod40Name">OPTICAL LENS EDGER MSE-1</h3>
+          <p class="product-desc" data-i18n="prod40Desc">Гибридная система: высокоскоростное фрезерование и точная шлифовка.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 35 -->
+      <div class="product-card reveal" data-category="industrial-edger"
+        onclick="window.location.href='product.html?id=se-9090-supra'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15912328.webp"
+            alt="Optical lens edger SE-9090 SUPRA">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod41Name">OPTICAL LENS EDGER SE-9090 SUPRA</h3>
+          <p class="product-desc" data-i18n="prod41Desc">Быстрая обработка с системой двух шпинделей и измерение обеих поверхностей.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 36 -->
+      <div class="product-card reveal" data-category="industrial-edger"
+        onclick="window.location.href='product.html?id=aes-2200'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-15912347.webp"
+            alt="Optical lens edger AES-2200">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod43Name">OPTICAL LENS EDGER AES-2200</h3>
+          <p class="product-desc" data-i18n="prod43Desc">Автоматическая лабораторная система с конвейером NICS.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 37 -->
+      <div class="product-card reveal" data-category="industrial-edger"
+        onclick="window.location.href='product.html?id=aes-1000'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-21242540.webp"
+            alt="Optical lens edger AES-1000">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod44Name">OPTICAL LENS EDGER AES-1000</h3>
+          <p class="product-desc" data-i18n="prod44Desc">Отличная адаптируемость для небольших оптических лабораторий.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="category-divider" id="peripheral">
+        <span data-i18n="categoryPeripheral">PERIPHERAL</span>
+      </div>
+      <!-- Product 39 -->
+      <div class="product-card reveal" data-category="peripheral"
+        onclick="window.location.href='product.html?id=ice-1500'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-17330099.webp"
+            alt="Optical lens blocker ICE-1500">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod45Name">OPTICAL LENS BLOCKER ICE-1500</h3>
+          <p class="product-desc" data-i18n="prod45Desc">Автоматическое измерение и блокировка линз с многофункциональным зажимом.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 40 -->
+      <div class="product-card reveal" data-category="peripheral"
+        onclick="window.location.href='product.html?id=ce-9'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-17330120.webp"
+            alt="Optical lens centering device CE-9">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod46Name">OPTICAL LENS CENTERING DEVICE CE-9</h3>
+          <p class="product-desc" data-i18n="prod46Desc">Устройство для центрирования оптических линз в компактном и стильном дизайне.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 41 -->
+      <div class="product-card reveal" data-category="peripheral"
+        onclick="window.location.href='product.html?id=lt-1200'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-17330155.webp"
+            alt="Optical lens shape tracer LT-1200">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod47Name">OPTICAL LENS SHAPE TRACER LT-1200</h3>
+          <p class="product-desc" data-i18n="prod47Desc">Многофункциональный лабораторный и веб-трейсер с автоматическим 3D сканированием.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 42 -->
+      <div class="product-card reveal" data-category="peripheral"
+        onclick="window.location.href='product.html?id=lt-980'">
+        <div class="product-image">
+          <img src="https://img.medicalexpo.com/images_me/photo-g/70665-20511084.webp"
+            alt="Optical lens shape tracer LT-980">
+        </div>
+        <div class="product-info">
+          <div class="product-category" data-i18n="placeholderCat">Оптика</div>
+          <h3 class="product-name" data-i18n="prod48Name">OPTICAL LENS SHAPE TRACER LT-980</h3>
+          <p class="product-desc" data-i18n="prod48Desc">Автоматическое 3D сканирование, защита от пыли, держатель демо-линз в одно касание.</p>
+          <div class="product-footer">
+            <span class="product-price" data-i18n="btnRequest">Запросить цену</span>
+            <button class="product-btn" aria-label="Details"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal" data-i18n="servicesLabel">Услуги</div>
+        <h2 class="section-title reveal" data-i18n="servicesTitle">Комплексный подход к оснащению</h2>
+        <p class="section-subtitle mx-auto reveal" data-i18n="servicesSubtitle">Мы сопровождаем клиента на каждом этапе
+          — от выбора оборудования до ввода в эксплуатацию</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-num">01</span>
+          <div class="icon-box"><i class="fas fa-comments"></i></div>
+          <h3 data-i18n="serv1Title">Консультация и подбор</h3>
+          <p data-i18n="serv1Desc">Наши эксперты помогут подобрать оптимальное оборудование под задачи и бюджет вашей
+            клиники.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-num">02</span>
+          <div class="icon-box"><i class="fas fa-truck"></i></div>
+          <h3 data-i18n="serv2Title">Доставка и монтаж</h3>
+          <p data-i18n="serv2Desc">Профессиональная доставка, распаковка, монтаж и калибровка оборудования на месте.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-num">03</span>
+          <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+          <h3 data-i18n="serv3Title">Обучение персонала</h3>
+          <p data-i18n="serv3Desc">Полное обучение врачей и медперсонала работе с новым оборудованием.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-num">04</span>
+          <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+          <h3 data-i18n="serv4Title">Гарантийный сервис</h3>
+          <p data-i18n="serv4Desc">Расширенная гарантия до 5 лет. Оперативный выезд инженера при любой неисправности.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-num">05</span>
+          <div class="icon-box"><i class="fas fa-puzzle-piece"></i></div>
+          <h3 data-i18n="serv5Title">Запасные части</h3>
+          <p data-i18n="serv5Desc">Оригинальные запчасти и расходные материалы. Склад наиболее востребованных позиций.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-num">06</span>
+          <div class="icon-box"><i class="fas fa-sync-alt"></i></div>
+          <h3 data-i18n="serv6Title">Trade-in программа</h3>
+          <p data-i18n="serv6Desc">Обмен старого оборудования на новое с зачётом стоимости. Обновляйте парк техники
+            выгодно.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal" data-i18n="contactLabel">Контакты</div>
+        <h2 class="section-title reveal" data-i18n="contactTitle">Свяжитесь с нами</h2>
+        <p class="section-subtitle mx-auto reveal" data-i18n="contactSubtitle">Мы готовы ответить на все ваши вопросы и
+          помочь с подбором оборудования</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <div class="contact-card" onclick="window.location.href='tel:+998931712202'" style="cursor: pointer;">
+            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4 data-i18n="contactPhone">Телефон</h4>
+              <p data-i18n="contactPhoneVal">+998 93 171 22 02</p>
+            </div>
+          </div>
+          <div class="contact-card" onclick="window.location.href='mailto:proftexnotrade0@gmail.com'" style="cursor: pointer;">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 data-i18n="contactEmail">Электронная почта</h4>
+              <p data-i18n="contactEmailVal">proftexnotrade0@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card" onclick="window.open('https://t.me/Dilshod2202', '_blank')" style="cursor: pointer;">
+            <div class="icon-box"><i class="fab fa-telegram-plane"></i></div>
+            <div>
+              <h4 data-i18n="contactTelegram">Telegram Админ</h4>
+              <p>@Dilshod2202</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 data-i18n="contactAddress">Адрес</h4>
+              <p data-i18n="contactAddressVal">г. Ташкент, Мирабадский р-н, СГМ Биродарлик, ул. Эльтузар, 58А</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon-box"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4 data-i18n="contactWorkHours">Режим работы</h4>
+              <p data-i18n="contactWorkHoursVal">Пн–Пт: 09:00–18:00, Сб: 10:00–15:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal">
+          <h3 data-i18n="formTitle">Оставить заявку</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label data-i18n="formName">Ваше имя</label>
+              <input type="text" name="name" data-i18n-placeholder="formNamePlaceholder" placeholder="Введите ваше имя"
+                required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="formPhone">Телефон</label>
+              <input type="tel" name="phone" data-i18n-placeholder="formPhonePlaceholder"
+                placeholder="+998 (__) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="formMessage">Сообщение</label>
+              <textarea name="message" data-i18n-placeholder="formMessagePlaceholder"
+                placeholder="Опишите ваш запрос..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-i18n="formSubmit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+
+    <!-- Success Toast Notification -->
+    <div id="formToast" style="
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 8px 32px rgba(40, 167, 69, 0.35);
+      z-index: 99999;
+      text-align: center;
+      max-width: 90%;
+      animation: toastSlideIn 0.5s ease;
+    ">
+      <i class="fas fa-check-circle" style="margin-right: 8px;"></i>
+      <span id="formToastText">Ваше сообщение отправлено! Мы свяжемся с вами в ближайшее время.</span>
+    </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="./logo.png" alt="ProfTexnoTrade" class="footer-logo-img">
+          <p data-i18n="footerDesc">Профессиональное офтальмологическое оборудование для клиник и медицинских центров.
+          </p>
+          <div class="footer-socials">
+            <a href="https://t.me/protexnotrade" aria-label="Telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.instagram.com/protexnotrade?igsh=OGY3cmxldXlpZmE3&utm_source=qr" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1B555GFn28/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@ProftexnoTrade" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerNav">Навигация</h4>
+          <ul>
+            <li><a href="#hero" data-i18n="navHome">Главная</a></li>
+            <li><a href="#about" data-i18n="navAbout">О нас</a></li>
+            <li><a href="#products" data-i18n="navProducts">Каталог</a></li>
+            <li><a href="#services" data-i18n="navServices">Услуги</a></li>
+            <li><a href="#contact" data-i18n="navContact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerProducts">Продукция</h4>
+          <ul>
+            <li><a href="#products" data-i18n="footerProd1">Диагностическое</a></li>
+            <li><a href="#products" data-i18n="footerProd2">Хирургическое</a></li>
+            <li><a href="#products" data-i18n="footerProd3">Оптическое</a></li>
+            <li><a href="#products" data-i18n="footerProd4">Аксессуары</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerContacts">Контакты</h4>
+          <ul>
+            <li><a href="tel:+998931712202" data-i18n="contactPhoneVal">+998 93 171 22 02</a></li>
+            <li><a href="mailto:proftexnotrade0@gmail.com" data-i18n="contactEmailVal">proftexnotrade0@gmail.com</a></li>
+            <li><a href="https://t.me/Dilshod2202" target="_blank">Telegram: @Dilshod2202</a></li>
+            <li><a href="#contact" data-i18n="contactAddressVal">г. Ташкент, Мирабадский р-н, СГМ Биродарлик, ул. Эльтузар, 58А</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footerCopy">© 2024 ProfTexnoTrade. Все права защищены.</span>
+        <div>
+          <a href="#" data-i18n="footerPrivacy">Политика конфиденциальности</a> &nbsp;|&nbsp;
+          <a href="#" data-i18n="footerTerms">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Firebase Compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+  <!-- Scripts -->
+  <script src="./firebase-client.js?v=2"></script>
+  <script src="./script-fixed.js?v=1.5"></script>
+</body>
+
+</html>
